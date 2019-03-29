@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import logClockTime from "./imperative";
+import startTicking from "./functional";
 
 function App() {
   return (
@@ -14,4 +15,6 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 
-setInterval(logClockTime, 1000);
+///setInterval(logClockTime, 1000);
+
+startTicking();
